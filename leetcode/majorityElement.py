@@ -12,6 +12,7 @@ You may assume that the array is non-empty and the majority element always exist
 '''
 __author__ = 'zerodel'
 
+
 class Solution(object):
     def majorityElement(self, nums):
         """
@@ -25,9 +26,8 @@ class Solution(object):
             else:
                 dd[n] = 1
         for n in dd:
-            if dd[n] > len(nums)/2:
+            if dd[n] > len(nums) / 2:
                 return n
-
 
     def majorityElement2(self, nums):
         counter, co = 0, 0
@@ -46,6 +46,7 @@ class Solution(object):
 
 if __name__ == "__main__":
     import sys
+
     if len(sys.argv) < 2:
         print(__doc__)
     else:

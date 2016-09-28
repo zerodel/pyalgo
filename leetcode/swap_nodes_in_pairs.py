@@ -17,7 +17,6 @@ Your algorithm should use only constant space. You may not modify the values in 
 __author__ = 'zerodel'
 
 
-
 def swapPairs(head):
     """
     :type head: ListNode
@@ -30,22 +29,24 @@ def swapPairs(head):
         pre, now = head.next, head
         while pre and now:
             dummy.next = pre
-            now.next, pre.next = pre.next, now            
+            now.next, pre.next = pre.next, now
             dummy, now = now, now.next
             if now:
                 pre = now.next
             else:
-                break            
+                break
         return res
     else:
         return head
 
-llst = val2linklist([1,2,3,4,5,6,7,8,9,0])
+
+llst = val2linklist([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
 
 print(linklist2vals(swapPairs(llst)))
 
 if __name__ == "__main__":
     import sys
+
     if len(sys.argv) < 2:
         print('---------------------------')
         print(__doc__)

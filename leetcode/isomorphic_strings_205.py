@@ -36,7 +36,7 @@ class Solution(object):
         s2t = {}
         t2s = {}
 
-        for c1,c2 in zip(s, t):
+        for c1, c2 in zip(s, t):
             if c1 in s2t:
                 if not c2 == s2t[c1]:
                     return False
@@ -51,18 +51,15 @@ class Solution(object):
             return True
 
 
-
-
-
 a = Solution().isIsomorphic
 
 print(a("egg", "add"))
 print(a("foo", "bar"))
 print(a("paper", "title"))
 
-
 if __name__ == "__main__":
     import sys
+
     if len(sys.argv) < 2:
         print(__doc__)
     else:

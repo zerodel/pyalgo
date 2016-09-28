@@ -23,7 +23,7 @@ __author__ = 'zerodel'
 
 def twosum(nums, target):
     dd = {}
-    for i,x in enumerate(nums):
+    for i, x in enumerate(nums):
         if x in dd:
             return [dd[x], i]
         else:
@@ -31,7 +31,6 @@ def twosum(nums, target):
 
 
 print(twosum([2, 7, 11, 15], 9))
-
 
 if __name__ == "__main__":
     pass

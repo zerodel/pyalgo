@@ -13,6 +13,7 @@ You may assume that duplicates do not exist in the tree.
 '''
 __author__ = 'zerodel'
 
+
 def buildTree(inorder, postorder):
     """
     :type inorder: List[int]

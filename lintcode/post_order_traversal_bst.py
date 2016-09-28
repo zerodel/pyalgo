@@ -24,13 +24,10 @@ return [3,2,1].
 __author__ = 'zerodel'
 
 
-
-
 class TreeNode:
     def __init__(self, val):
         self.val = val
         self.left, self.right = None, None
-
 
 
 class Solution:
@@ -38,6 +35,7 @@ class Solution:
     @param root: The root of binary tree.
     @return: Postorder in ArrayList which contains node values.
     """
+
     def postorderTraversal(self, root):
         # write your code here
         path = [root]
@@ -58,7 +56,6 @@ class Solution:
         return visited
 
 
-
 root = TreeNode(1)
 
 root.left = None
@@ -68,7 +65,6 @@ root.right = p2
 
 a = Solution()
 print(a.postorderTraversal(root))
-
 
 if __name__ == "__main__":
     pass

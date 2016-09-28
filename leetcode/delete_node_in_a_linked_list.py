@@ -12,6 +12,7 @@ Supposed the linked list is 1 -> 2 -> 3 -> 4 and you are given the third node wi
 '''
 __author__ = 'zerodel'
 
+
 class ListNode(object):
     def __init__(self, x):
         self.val = x
@@ -21,8 +22,6 @@ class ListNode(object):
 def delete_node(node):
     node.val = node.next.val
     node.next = node.next.next
-
-
 
 
 if __name__ == "__main__":

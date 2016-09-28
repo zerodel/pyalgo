@@ -5,7 +5,6 @@
 #
 from linked_list_op_leetcode import *
 
-
 __doc__ = ''' Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
 
 If the number of nodes is not a multiple of k then left-out nodes in the end should remain as it is.
@@ -22,6 +21,7 @@ For k = 2, you should return: 2->1->4->3->5
 For k = 3, you should return: 3->2->1->4->5
 '''
 __author__ = 'zerodel'
+
 
 def reverseKGroup(head, k):
     """
@@ -63,7 +63,6 @@ def reverseKGroup(head, k):
 ll = val2linklist(list("1234567890"))
 
 print(linklist2vals(reverseKGroup(ll, 4)))
-
 
 if __name__ == "__main__":
     pass

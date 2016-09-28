@@ -4,13 +4,12 @@
 # Readme:
 #
 
-import sys
-import os
-
 from linked_list_op_leetcode import *
+
 __doc__ = '''
 '''
 __author__ = 'zerodel'
+
 
 # Definition for singly-linked list.
 # class ListNode(object):

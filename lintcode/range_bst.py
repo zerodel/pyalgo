@@ -20,7 +20,6 @@ If k1 = 10 and k2 = 22, then your function should return [12, 20, 22].
 '''
 __author__ = 'zerodel'
 
-
 """
 Definition of TreeNode:
 class TreeNode:
@@ -28,12 +27,15 @@ class TreeNode:
         self.val = val
         self.left, self.right = None, None
 """
+
+
 class Solution:
     """
     @param root: The root of the binary search tree.
     @param k1 and k2: range k1 to k2.
     @return: Return all keys that k1<=key<=k2 in ascending order.
     """
+
     def searchRange(self, root, k1, k2):
         # write your code here
         check = lambda x: x <= k2 and x >= k1
@@ -76,11 +78,11 @@ class Solution:
 
         return [x for x in sorted(on_node(root))]
 
+
 if __name__ == "__main__":
     import sys
+
     if len(sys.argv) < 2:
         print(__doc__)
     else:
         pass
-
-

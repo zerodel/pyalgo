@@ -15,13 +15,14 @@ Output: 7 -> 0 -> 8
 '''
 __author__ = 'zerodel'
 
+
 class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
 
 
-def addTwoNumbers( l1, l2):
+def addTwoNumbers(l1, l2):
     """
     :type l1: ListNode
     :type l2: ListNode
@@ -34,8 +35,8 @@ def addTwoNumbers( l1, l2):
     while l1 or l2:
 
         if l1 and l2:
-            a, b = l1.val , l2.val
-            l1 , l2 = l1.next, l2.next
+            a, b = l1.val, l2.val
+            l1, l2 = l1.next, l2.next
             c = a + b + add
         else:
             if l1:
@@ -56,9 +57,11 @@ def addTwoNumbers( l1, l2):
 
     res_nodes = [ListNode(x) for x in res_num]
     for i in range(len(res_num) - 1):
-        res_nodes[i].next = res_nodes[i+1]
+        res_nodes[i].next = res_nodes[i + 1]
 
     return res_nodes[0]
+
+
 #    return res_num
 
 a1 = ListNode(2)

@@ -17,11 +17,13 @@ Note: The sequence of integers will be represented as a string.
 '''
 __author__ = 'zerodel'
 
+
 def countAndSay(n):
     """
     :type n: int
     :rtype: str
     """
+
     def count_nums(nums):
         pre = nums[0]
         count = 0
@@ -43,8 +45,9 @@ def countAndSay(n):
     res = "1"
     while count < n:
         res = count_nums(res)
-        count +=1
+        count += 1
     return res
+
 
 print(countAndSay(2))
 

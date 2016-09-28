@@ -33,13 +33,14 @@ def reverseList(head):
     head.next = None
     return n
 
+
 ll = val2linklist(list("1234567890"))
 
 print(linklist2vals(reverseList(ll)))
 
-
 if __name__ == "__main__":
     import sys
+
     if len(sys.argv) < 2:
         print(__doc__)
     else:

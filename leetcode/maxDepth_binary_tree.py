@@ -14,6 +14,7 @@ The maximum depth is the number of nodes along the longest path from the root no
 '''
 __author__ = 'zerodel'
 
+
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -27,6 +28,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
+
         def dep(node):
             if node:
                 ldep = dep(node.left)
@@ -40,8 +42,10 @@ class Solution(object):
 
         return dep(root)
 
+
 if __name__ == "__main__":
     import sys
+
     if len(sys.argv) < 2:
         print(__doc__)
     else:

@@ -56,6 +56,7 @@ def split_string(str_raw):
     uniformed = ["".join(seg).strip() for seg in reversed(res)]
     return [x for x in uniformed if x and not x == " "]
 
+
 def is_int(x):
     op = "+-()"
     for i in op:
@@ -63,6 +64,7 @@ def is_int(x):
             return False
     else:
         return True
+
 
 def cal_reverse_expression(reverse_polish):
     s = []
@@ -78,6 +80,7 @@ def cal_reverse_expression(reverse_polish):
                 s.append(pre - post)
 
     return s[-1]
+
 
 def make_reverse_expression(str_raw):
     op = []

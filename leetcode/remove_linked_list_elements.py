@@ -14,11 +14,11 @@ Return: 1 --> 2 --> 3 --> 4 --> 5
 '''
 __author__ = 'zerodel'
 
+
 class ListNode(object):
     def __init__(self, x):
         self.val = x
         self.next = None
-
 
 
 def remove_elements(head, val):
@@ -38,6 +38,7 @@ def remove_elements(head, val):
             prev, cur = cur, cur.next
 
     return head
+
 
 #
 # def remove_elements(head, val):
@@ -60,10 +61,11 @@ def remove_elements(head, val):
 
 
 
-    # the last one
+# the last one
 
 if __name__ == "__main__":
     import sys
+
     if len(sys.argv) < 2:
         print(__doc__)
     else:

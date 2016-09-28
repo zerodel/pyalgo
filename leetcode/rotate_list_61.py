@@ -14,6 +14,7 @@ return 4->5->1->2->3->NULL.
 '''
 __author__ = 'zerodel'
 
+
 def rotateRight(head, k):
     """
     :type head: ListNode
@@ -31,7 +32,7 @@ def rotateRight(head, k):
         hl = hl.next
         lst += 1
 
-    k = k%lst
+    k = k % lst
     if k == 0:
         return head
     while head.next:
@@ -42,12 +43,12 @@ def rotateRight(head, k):
         if counter == k:
             h_new = head
 
-
     if h_new:
         head.next = h_bak
         end.next = None
         head = h_new
     return head
+
 
 # def rotateRight(head, k):
 #     """
@@ -74,8 +75,8 @@ def rotateRight(head, k):
 #
 #     return nodes[0]
 
-#[1,2,3]
-#2000000000
+# [1,2,3]
+# 2000000000
 
 ll = val2linklist(list("123"))
 
@@ -83,6 +84,7 @@ print(linklist2vals(rotateRight(ll, 2000000000)))
 
 if __name__ == "__main__":
     import sys
+
     if len(sys.argv) < 2:
         print(__doc__)
     else:

@@ -18,6 +18,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
+
         def boyer_moore_most_vote(nums):
             n0, n1, c0, c1 = None, None, 0, 0
             for i in nums:
@@ -41,16 +42,19 @@ class Solution(object):
                     c0 += 1
                 elif i == n1:
                     c1 += 1
-            result =[]
-            if c0 > len(nums)/3:
+            result = []
+            if c0 > len(nums) / 3:
                 result.append(n0)
-            if c1 > len(nums)/3:
+            if c1 > len(nums) / 3:
                 result.append(n1)
             return result
 
         return boyer_moore_most_vote(nums)
+
+
 if __name__ == "__main__":
     import sys
+
     if len(sys.argv) < 2:
         print(__doc__)
     else:

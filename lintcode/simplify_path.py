@@ -26,6 +26,7 @@ __author__ = 'zerodel'
 class Solution(object):
     pass
 
+
 # def simplifyPath(path):
 #     """
 #     :type path: str
@@ -64,8 +65,6 @@ def simplifyPath(path):
 print(simplifyPath("/home/"))
 print(simplifyPath("/../"))
 print(simplifyPath("/a/./b/../../c/"))
-
-
 
 if __name__ == "__main__":
     pass

@@ -25,6 +25,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[List[int]]
         """
+
         def bfs(root):
             from collections import deque
             nodes = deque()
@@ -60,14 +61,13 @@ class Solution(object):
 
             return values, level_record
 
-        result =[]
+        result = []
         if root:
             values, level_records = bfs(root)
 
             d_level = {}
-            for value,level in zip(values, level_records):
+            for value, level in zip(values, level_records):
                 d_level.setdefault(str(level), []).append(value)
-
 
             for level in sorted([int(level) for level in d_level]):
                 raw_level_values = [i for i in d_level[str(level)] if isinstance(i, int)]
@@ -79,6 +79,7 @@ class Solution(object):
 
 if __name__ == "__main__":
     import sys
+
     if len(sys.argv) < 2:
         print(__doc__)
     else:

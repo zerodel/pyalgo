@@ -15,11 +15,10 @@ What is the largest prime factor of the number 600851475143 ?
 '''
 __author__ = 'zerodel'
 
+
 # todo: this need to be done
 def largest_prime_factor(n):
     pass
-
-
 
 
 if __name__ == "__main__":

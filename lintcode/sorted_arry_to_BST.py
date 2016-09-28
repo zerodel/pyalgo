@@ -31,11 +31,14 @@ class TreeNode:
         self.val = val
         self.left, self.right = None, None
 """
+
+
 class Solution:
     """
     @param A: a list of integer
     @return: a tree node
     """
+
     def sortedArrayToBST(self, A):
         # write your code here
         def split_array(al):
@@ -61,6 +64,7 @@ class Solution:
 
 if __name__ == "__main__":
     import sys
+
     if len(sys.argv) < 2:
         print(__doc__)
     else:

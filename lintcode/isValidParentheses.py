@@ -14,6 +14,7 @@ The brackets must close in the correct order, "()" and "()[]{}" are all valid bu
 '''
 __author__ = 'zerodel'
 
+
 class Solution:
     # @param {string} s A string
     # @return {boolean} whether the string is a valid parentheses
@@ -21,14 +22,14 @@ class Solution:
         # Write your code here
         sk = []
         dd = {
-            ")":"(",
-            "]":"[",
-            "}":"{"
+            ")": "(",
+            "]": "[",
+            "}": "{"
         }
         for c in s:
             if c in "({[":
                 sk.append(c)
-            if c in dd :
+            if c in dd:
                 if sk and dd[c] == sk[-1]:
                     sk.pop()
                 else:
@@ -38,6 +39,7 @@ class Solution:
 
 if __name__ == "__main__":
     import sys
+
     if len(sys.argv) < 2:
         print(__doc__)
     else:

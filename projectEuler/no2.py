@@ -27,11 +27,12 @@ def fib():
         a, b = b, a + b
         yield b
 
+
 sum = 0
 for x in fib():
-    if x%2 == 0:
+    if x % 2 == 0:
         sum += x
-    if x > 4*10**6:
+    if x > 4 * 10 ** 6:
         break
 print(sum)
 

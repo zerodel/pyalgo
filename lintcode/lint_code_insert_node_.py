@@ -42,11 +42,9 @@ class Solution:
             level = [n for t in ld for n in t]
 
 
-
-
-
 if __name__ == "__main__":
     import sys
+
     if len(sys.argv) < 2:
         print(__doc__)
     else:

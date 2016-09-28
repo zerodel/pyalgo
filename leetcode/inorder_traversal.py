@@ -17,19 +17,19 @@ class TreeNode:
         self.left, self.right = None, None
 
 
-
 class Solution:
     """
     @param root: The root of binary tree.
     @return: Preorder in ArrayList which contains node values.
     """
+
     def inorderTraversal(self, root):
         # write your code here
         if not root:
             return []
 
         node = root
-        path =[]
+        path = []
         stk = []
 
         while True:
@@ -47,9 +47,6 @@ class Solution:
         return path
 
 
-
-
-
 # test
 root = TreeNode(1)
 
@@ -62,9 +59,9 @@ result = a.inorderTraversal(root)
 print("----------------")
 print(result)
 
-
 if __name__ == "__main__":
     import sys
+
     if len(sys.argv) < 2:
         print(__doc__)
     else:

@@ -22,7 +22,7 @@ Try to do this in one pass.
 __author__ = 'zerodel'
 
 
-#===============================================================================
+# ===============================================================================
 # def removeNthFromEnd(head, n):
 #     """
 #     :type head: ListNode
@@ -56,7 +56,7 @@ __author__ = 'zerodel'
 #     else:
 #         return None
 #     return head
-#===============================================================================
+# ===============================================================================
 
 def removeNthFromEnd(head, n):
     nova_head = ListNode(-1)
@@ -64,18 +64,17 @@ def removeNthFromEnd(head, n):
     now, pre = nova_head, nova_head
     for i in range(n):
         pre = pre.next
-    
+
     while pre.next:
         now, pre = now.next, pre.next
-        
+
     now.next = now.next.next
-    
+
     return head
 
 
-ll = val2linklist([2,3])
+ll = val2linklist([2, 3])
 print(linklist2vals(removeNthFromEnd(ll, 1)))
-
 
 if __name__ == "__main__":
     pass
